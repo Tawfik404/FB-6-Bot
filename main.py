@@ -1,12 +1,8 @@
-'''
-EAAGwRF2lGTMBO1ZCWKIrALHPOswLUeQ5yp78jruXg9IzMjjEgX4qAzIWxxXzKv723NNqeKCsS8oGHnWTadkAwgQZCrZBl1cJbWySFjlc4uG2QvD8DS5hl5NcAxyYhAZAlfzIGrn0nPC50ADMCxBI68TvtUXyCLE6lb3CMGlcVcb1dEtjmViMGACaS1bf9xVs
-
-'''
 
 import requests
 
 
-from flask import Flask, request, jsonify
+from flask import Flask, request
 
 app = Flask(__name__)
 

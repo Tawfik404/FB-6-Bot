@@ -52,7 +52,7 @@ def send_message(recipient_id, text):
         "Content-Type": "application/json"
     }
 
-    access_token = "EAAGwRF2lGTMBO1ZCWKIrALHPOswLUeQ5yp78jruXg9IzMjjEgX4qAzIWxxXzKv723NNqeKCsS8oGHnWTadkAwgQZCrZBl1cJbWySFjlc4uG2QvD8DS5hl5NcAxyYhAZAlfzIGrn0nPC50ADMCxBI68TvtUXyCLE6lb3CMGlcVcb1dEtjmViMGACaS1bf9xVs"  # Replace with your Page Access Token
+    access_token = "EAAGwRF2lGTMBOwncBWFPzsvrA7Cy0e2WDk9gxZBPMopomwyATZCRtdBoWqM6etCWZBWH5UgI0j3QxG2aZAQW3OfT5ND9D3ZBSndfooE9iDpblmiCHplwU2QMrXLiZCRAKKxZAUc1dT4osZAoNTD7MiZB2ZAmZBLhs3HZAvwqcURHN0Hc725DVKEcjO7TNq8ZAegc73fO2yK5USVC66I8mvFb4fHovcf1o"  # Replace with your Page Access Token
 
     response = requests.post(url, json=payload, headers=headers, params={"access_token": access_token})
     if response.status_code != 200:

@@ -62,24 +62,3 @@ if __name__ == "__main__":
     app.run(port=5000)
 
 
-
-# Replace with your Page Access Token and User ID
-ACCESS_TOKEN = "ACCESS_TOKEN"
-USER_ID = "RECIPIENT_USER_ID"
-
-url = "https://graph.facebook.com/v16.0/me/messages"
-headers = {
-    "Content-Type": "application/json"
-}
-
-payload = {
-    "recipient": {"id": USER_ID},
-    "message": {"text": "Hello! This is a test message from your Facebook page."}
-}
-
-response = requests.post(url, headers=headers, json=payload, params={"access_token": ACCESS_TOKEN})
-
-if response.status_code == 200:
-    print("Message sent successfully!")
-else:
-    print("Error:", response.json())

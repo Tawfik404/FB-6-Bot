@@ -6,7 +6,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-VERIFY_TOKEN = "VERIFY_TOKEN"  # This will be used to verify your webhook
+VERIFY_TOKEN = "uwefgiwjfowjnowiyfonscmnamndlaijdipdjpdjwifjcn"  # This will be used to verify your webhook
 
 # Step 1: Webhook Verification
 @app.route('/webhook', methods=['GET'])
@@ -52,7 +52,7 @@ def send_message(recipient_id, text):
         "Content-Type": "application/json"
     }
 
-    access_token = "YOUR_PAGE_ACCESS_TOKEN"  # Replace with your Page Access Token
+    access_token = "EAAGwRF2lGTMBO1ZCWKIrALHPOswLUeQ5yp78jruXg9IzMjjEgX4qAzIWxxXzKv723NNqeKCsS8oGHnWTadkAwgQZCrZBl1cJbWySFjlc4uG2QvD8DS5hl5NcAxyYhAZAlfzIGrn0nPC50ADMCxBI68TvtUXyCLE6lb3CMGlcVcb1dEtjmViMGACaS1bf9xVs"  # Replace with your Page Access Token
 
     response = requests.post(url, json=payload, headers=headers, params={"access_token": access_token})
     if response.status_code != 200:
